@@ -28,7 +28,7 @@ test.describe("Test case 01", () => {
 });
 
 test.describe("Test case 01-1", () => {
-  test.only("Expect can select exact product for config", async ({
+  test("Expect can select exact product for config", async ({
     loginPage,
     dashBoard,
     boostConvert,
