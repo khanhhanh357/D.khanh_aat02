@@ -130,7 +130,7 @@ test.describe("Test API update", () => {
   });
 });
 
-test.describe("Test case 02", () => {
+test.describe("Test API GET UPDATED", () => {
   test("Expect API is valid for default setting value config", async ({
     request,
   }) => {
