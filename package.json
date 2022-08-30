@@ -1,0 +1,18 @@
+{
+  "name": "b7_aat02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test tests\boost_convert\rt_visitors\testcases.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.25.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
