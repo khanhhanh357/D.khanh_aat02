@@ -57,9 +57,11 @@ async product_Selected(){
  const name_Product= await this.page
  .locator(`//span[contains(text(),'Selected Products')]/../following-sibling::div//child::div//child::div[@class='product-content']//child::div//child::div[@class='products-name fs-body m-b-xxs']`)
  const count = await name_Product.count()
-for (let i = 0; i < count; ++i)
-console.log(await name_Product.nth(i).textContent()) 
- //return (await name_Product.nth(i).textContent());
+
+
+ const texts = await name_Product.evaluateAll(list => list.map(element => element.textContent));
+ console.log(texts)
+ return texts;
   }
 
 
